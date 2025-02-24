@@ -1,0 +1,3 @@
+kitty 5 tabby
+ken 3 dog
+gregory 1 rabbit
