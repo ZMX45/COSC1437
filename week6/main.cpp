@@ -24,13 +24,13 @@ int main(){
 
     int choice; // coding each choice in ui
     do {
-        displayMenu();
+        displayMenu(); // open ui menu
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
 
         switch (choice) {
-        case 1: {
+        case 1: { // creating new animal
             string name, species;
             int age;
             cout << "Enter animal name: ";
@@ -43,26 +43,26 @@ int main(){
             myZoo.addAnimal(new Mammal(name, age, species));
             break;
         }
-        case 2: {
+        case 2: { // removing animal from array
             int index;
             cout << "Enter animal index to remove: ";
             cin >> index;
             myZoo.removeAnimal(index);
             break;
         }
-        case 3:
+        case 3: // print zoo array 
             myZoo.displayAnimals();
             break;
-        case 4:
+        case 4: // save array to file
             myZoo.saveToFile("zoo_data.txt");
             break;
-        case 5:
+        case 5: // load array from file
             myZoo.loadFromFile("zoo_data.txt");
             break;
-        case 6:
+        case 6: // exit program
             cout << "Exiting...\n";
             break;
-        default:
+        default: // choice to make sure user inputs proper answer
             cout << "Invalid choice!\n";
         }
     } while (choice != 6); // repeating until user chooses exit
