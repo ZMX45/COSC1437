@@ -1,0 +1,5 @@
+Try/Catch blocks are used to handle errors that are created when a program is executed such as invalid values or illegal processes.
+Throwing an exception is used to catch errors and display what went wrong while assertions are used to find programming mistakes.
+Custom Exception classes allow the programmer to create custom rules that the program must follow and allows for custom error messages sent to the terminal.
+Stack unwinding allows a try block to go through multiple catch blocks until a valid catch block is found.
+Errors should be logged instead of terminating a program when said program is something that cannot terminate and needs to continue even if errors are present such as banks and hospital equipment.
