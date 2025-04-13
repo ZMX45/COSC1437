@@ -76,7 +76,7 @@ bool exploreRoom(int depth) {
         return false;
     }
 
-    // Recursive call deeper into the dungeon
+    // Recursive call adding to the floor count until the player escapes or dies
     return exploreRoom(depth + 1);
 }
 

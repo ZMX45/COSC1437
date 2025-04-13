@@ -1,0 +1,4 @@
+The recursive function in the Barony Dungeon is meant to keep the exploration of the dungeon going
+This is achieved by continually calling the exploration function and until the player escapes the dungeon or dies
+The user inputs a direction to go after each floor but this a formality as each direction except exit is the same
+The Program uses time of day to generate a seed to find the exit floor.
